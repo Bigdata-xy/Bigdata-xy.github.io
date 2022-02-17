@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.0.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/cc-by-nc-sa.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":5,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="Typora编辑器能简单地用Markdown语言书写文字，页面简约，实时预览，本文主要介绍了Typora的安装及简单操作教程，争对编写一篇完整的博客所需的操作，特此记录。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="博客搭建3——typora博客书写">
+<meta property="og:url" content="http://example.com/2022/02/04/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA(3)-typora%E5%8D%9A%E5%AE%A2%E4%B9%A6%E5%86%99/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA3%E2%80%94%E2%80%94typora%E5%8D%9A%E5%AE%A2%E4%B9%A6%E5%86%99/index.html">
+<meta property="og:site_name" content="小月戈兀2022">
+<meta property="og:description" content="Typora编辑器能简单地用Markdown语言书写文字，页面简约，实时预览，本文主要介绍了Typora的安装及简单操作教程，争对编写一篇完整的博客所需的操作，特此记录。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://s2.loli.net/2022/02/05/aYl3BbGTv1NxDKI.png">
+<meta property="og:image" content="https://s2.loli.net/2022/02/05/aQqLuXfP1i4zlWd.png">
+<meta property="og:image" content="https://s2.loli.net/2022/02/05/Fzya1ThZSYB4x6m.png">
+<meta property="article:published_time" content="2022-02-04T06:02:58.000Z">
+<meta property="article:modified_time" content="2022-02-17T08:02:43.878Z">
+<meta property="article:author" content="Xiao Yao">
+<meta property="article:tag" content="blog">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s2.loli.net/2022/02/05/aYl3BbGTv1NxDKI.png">
+
+<link rel="canonical" href="http://example.com/2022/02/04/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA(3)-typora%E5%8D%9A%E5%AE%A2%E4%B9%A6%E5%86%99/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA3%E2%80%94%E2%80%94typora%E5%8D%9A%E5%AE%A2%E4%B9%A6%E5%86%99/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>博客搭建3——typora博客书写 | 小月戈兀2022</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="小月戈兀2022" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">小月戈兀2022</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">不断微笑前行的波吉</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+
+  <a href="https://github.com/Bigdata-xy/Bigdata-xy.github.io" class="github-corner" title="Bigdata-xy GitHub" aria-label="Bigdata-xy GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/02/04/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA(3)-typora%E5%8D%9A%E5%AE%A2%E4%B9%A6%E5%86%99/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA3%E2%80%94%E2%80%94typora%E5%8D%9A%E5%AE%A2%E4%B9%A6%E5%86%99/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/222.png">
+      <meta itemprop="name" content="Xiao Yao">
+      <meta itemprop="description" content="Forget yesterday , Cherish today">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小月戈兀2022">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          博客搭建3——typora博客书写
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2022-02-04 14:02:58" itemprop="dateCreated datePublished" datetime="2022-02-04T14:02:58+08:00">2022-02-04</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-02-17 16:02:43" itemprop="dateModified" datetime="2022-02-17T16:02:43+08:00">2022-02-17</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Set-blog/" itemprop="url" rel="index"><span itemprop="name">Set blog</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span><br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>1.8k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>7 分钟</span>
+            </span>
+            <div class="post-description"><div align = "center"><font size=3>Typora编辑器能简单地用Markdown语言书写文字，页面简约，实时预览，本文主要介绍了Typora的安装及简单操作教程，争对编写一篇完整的博客所需的操作，特此记录。</font></div></div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>&emsp;&emsp;<font size="3">写在开头：在前期博客搭建及背景设置完成后，可在站点目录下打开hexo bash，通过hexo new “title”命令，在\Blog\source\ _posts目录下生成以title命名的.md文档，安装Typora后，用该软件打开新文档进行编写，Typora文档有一些简单的编写规则，可直接调节文档各种属性且不用担心排版问题。下列主要以如何完整的编写第一篇博客文档进行阐述。</font></p>
+<h2 id="Typora编译器的安装"><a href="#Typora编译器的安装" class="headerlink" title="Typora编译器的安装"></a><font size="5">Typora编译器的安装</font></h2><p>&emsp;&emsp;<font size="4">Typora下载官网：<a target="_blank" rel="noopener" href="https://www.typora.net/">Typora</a>，根据自己的电脑配置自行安装下载。</font></p>
+<h2 id="PicGo-SM-MS安装与环境配置"><a href="#PicGo-SM-MS安装与环境配置" class="headerlink" title="PicGo+SM.MS安装与环境配置"></a><font size="5">PicGo+SM.MS安装与环境配置</font></h2><p>&emsp;&emsp;<font size="4">在Typora中插入的图片经常会失效，比如无法复制到word、印象笔记等软件中。后来发现原因是：由于上传的图片使用的是绝对路径或者相对路径，每次插入截图的图片时，默认都是将图片存在C盘中，当MD文件移动时，图片的链接就会失效，就会出现图片加载失败的问题。</font>较好的解决办法是采用图床上传的方式解决，通过上网查找，尝试多种方法，最终使用SM.MS+PicGo的方式成功解决。主要依据下列教程将SM.MS+PicGo+Typora进行环境配置，<em>《Typora关于本地图片复制失效的解决方法，SM.MS+PicGo图床配置》</em><sup><a href="#fn_在csdn上搜索" id="reffn_在csdn上搜索">在csdn上搜索</a></sup></p>
+<font size="4">在Typora中插入图片时可直接用电脑截图后，粘贴。</font>
+
+<h2 id="Typora编写md文档"><a href="#Typora编写md文档" class="headerlink" title="Typora编写md文档"></a><font size="5">Typora编写md文档</font></h2><p>&emsp;&emsp;<font size="4">运用Typora打开新建的文档进行相应编写，在编写过程中可随时在站点目录下打开hexo bash输入hexo s进行效果查看。</font></p>
+<h3 id="文档头部编写"><a href="#文档头部编写" class="headerlink" title="文档头部编写"></a><font size="4">文档头部编写</font></h3><p>&emsp;&emsp;<font size="4">首先，进入主题配置文档\Blog\themes\next下的_config.yml，找到menu字段，设置如下：</font></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: / || home</span><br><span class="line">  #about: /about/ || user</span><br><span class="line">  tags: /tags/ || tags</span><br><span class="line">  categories: /categories/ || th</span><br><span class="line">  archives: /archives/ || archive</span><br><span class="line">  #schedule: /schedule/ || calendar</span><br><span class="line">  #sitemap: /sitemap.xml || fa fa-sitemap</span><br><span class="line">  #commonweal: /404/ || fa fa-heartbeat</span><br></pre></td></tr></table></figure>
+<p>之后，卸载系统自带的排序插件<code>npm uninstall hexo-generator-index</code>添加替代插件<code>npm install hexo-generator-index-pin-top --save</code></p>
+<p>如上设置后，可在md文档头部编写tags、categories将文档进行归类，编写top对该文档在首页显示排序<sup><a href="#fn_数值越大排序越靠前" id="reffn_数值越大排序越靠前">数值越大排序越靠前</a></sup>，编写如下图：</p>
+<p><img src="https://s2.loli.net/2022/02/05/aYl3BbGTv1NxDKI.png" alt="image-20220205134512998" style="zoom:80%;"></p>
+<font size="4">各种属性均可修改，其中description为该文章在主页中显示的概括说明，涉及到的编写语法后文进行说明。</font><br><font size="4">特别注意，头部文件编写过程中冒号后面一定要先空格再加内容。</font>
+
+<h3 id="Typora编写语法仅记录最近用到的语法内容，持续更新"><a href="#Typora编写语法仅记录最近用到的语法内容，持续更新" class="headerlink" title="Typora编写语法仅记录最近用到的语法内容，持续更新"></a><font size="4">Typora编写语法</font><sup><a href="#fn_<font size=2>仅记录最近用到的语法内容，持续更新</font>" id="reffn_<font size=2>仅记录最近用到的语法内容，持续更新</font>"><font size="2">仅记录最近用到的语法内容，持续更新</font></a></sup></h3><ul>
+<li><code>&amp;emsp;</code>：添加空格，在Markdown中无法用空格键添加空格，可在需加空格处键入前述字符自动添加。</li>
+<li><code>&lt;font size=4&gt;xxx&lt;/font&gt;</code>：修改内容字号大小，前后三角括号为固定格式，中间的数值范围为1~10，1最小，xxx即为编辑内容。</li>
+<li><code>##... + 空格 + xxx</code>：添加标题，其中#为标题级别共六级，井号越少级别越高。</li>
+<li><code>1. + 空格 + xxx</code>：有序列表，前面序号加点，注意要有空格。</li>
+<li><code>- + 空格 + xxx</code>：无序列表，前面-号加空格，自动生成无序列表。</li>
+<li><code>&lt;div align = &quot;center&quot;&gt;xxx&lt;/div&gt;</code>：居中对齐，固定格式，xxx为居中内容。</li>
+<li><code>&lt;br/&gt;</code>：换行符，用在需要换行的句尾。</li>
+<li><code>ctrl+[</code>：退出无序列表，快捷键返回上一级。</li>
+<li><code>*xxx*</code>：添加斜体内容，前后各一星；添加黑体，前后各两星。</li>
+</ul>
+<h2 id="上传博客"><a href="#上传博客" class="headerlink" title="上传博客"></a><font size="5">上传博客</font></h2><p>&emsp;&emsp;<font size="4">在站点目录下打开Hexo Bash，输入<code>hexo d</code>，输入GitHub账号名和密钥即可上传。<br>特别地，如果出现如下情况：</font></p>
+<p><img src="https://s2.loli.net/2022/02/05/aQqLuXfP1i4zlWd.png" alt="image-20220205144757584"></p>
+<p>遇到该语句且无法上传成功，删除站点目录下的.deploy_git，然后<code>hexo clean &amp;&amp; hexo g –d</code>，即可解决错误，上传成功。</p>
+<font size="4">如果出现：</font>
+
+<p><img src="https://s2.loli.net/2022/02/05/Fzya1ThZSYB4x6m.png" alt="image-20220205144951817" style="zoom:80%;"></p>
+<font size="4">该错误为网络链接超时，重新试几次即可。</font>
+
+<blockquote id="fn_在csdn上搜索">
+<sup>在csdn上搜索</sup>. <a target="_blank" rel="noopener" href="https://blog.csdn.net/Henghao123/article/details/106961488?utm_source=app&amp;app_version=5.0.1&amp;code=app_1562916241&amp;uLinkId=usr1mkqgl919blen"><font size="2">Typora关于本地图片复制失效的解决方法，SM.MS+PicGo图床配置</font></a><a href="#reffn_在csdn上搜索" title="Jump back to footnote [在csdn上搜索] in the text."> &#8617;</a>
+</blockquote>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          
+          <div class="post-tags">
+              <a href="/tags/blog/" rel="tag"><i class="fa fa-tag"></i> blog</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2022/02/02/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA(1)-Hexo-github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA1%E2%80%94%E2%80%94Hexo-github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" rel="prev" title="博客搭建1——Hexo+github搭建个人博客">
+      <i class="fa fa-chevron-left"></i> 博客搭建1——Hexo+github搭建个人博客
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2022/02/17/%E4%B8%AA%E4%BA%BA%E8%B4%A2%E5%8A%A1%E8%A7%84%E5%88%92/%E4%B8%AA%E4%BA%BA%E8%B4%A2%E5%8A%A1%E8%A7%84%E5%88%92/" rel="next" title="个人财务规划">
+      个人财务规划 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Typora%E7%BC%96%E8%AF%91%E5%99%A8%E7%9A%84%E5%AE%89%E8%A3%85"><span class="nav-number">1.</span> <span class="nav-text">Typora编译器的安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#PicGo-SM-MS%E5%AE%89%E8%A3%85%E4%B8%8E%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE"><span class="nav-number">2.</span> <span class="nav-text">PicGo+SM.MS安装与环境配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Typora%E7%BC%96%E5%86%99md%E6%96%87%E6%A1%A3"><span class="nav-number">3.</span> <span class="nav-text">Typora编写md文档</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%87%E6%A1%A3%E5%A4%B4%E9%83%A8%E7%BC%96%E5%86%99"><span class="nav-number">3.1.</span> <span class="nav-text">文档头部编写</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Typora%E7%BC%96%E5%86%99%E8%AF%AD%E6%B3%95%E4%BB%85%E8%AE%B0%E5%BD%95%E6%9C%80%E8%BF%91%E7%94%A8%E5%88%B0%E7%9A%84%E8%AF%AD%E6%B3%95%E5%86%85%E5%AE%B9%EF%BC%8C%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0"><span class="nav-number">3.2.</span> <span class="nav-text">Typora编写语法仅记录最近用到的语法内容，持续更新</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%8A%E4%BC%A0%E5%8D%9A%E5%AE%A2"><span class="nav-number">4.</span> <span class="nav-text">上传博客</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Xiao Yao"
+      src="/images/222.png">
+  <p class="site-author-name" itemprop="name">Xiao Yao</p>
+  <div class="site-description" itemprop="description">Forget yesterday , Cherish today</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Xiao Yao</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+      <span class="post-meta-item-text">站点总字数：</span>
+    <span title="站点总字数">16k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
+    <span title="站点阅读时长">56 分钟</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+<div class="powered-by">
+<i class="fa fa-user-md"></i>
+<span id="busuanzi_container_site_uv">
+  本站总访客数:<span id="busuanzi_value_site_uv"></span>&nbsp;&nbsp;| 
+</span>
+<span id="busuanzi_container_site_pv">
+    &nbsp;本站总访问量<span id="busuanzi_value_site_pv"></span>次
+</span>
+</div>
+</div>
+
+<script>
+    var now = new Date(); 
+    function createtime() { 
+        var grt= new Date("03/12/2019 12:00:00");//此处修改你的建站时间或者网站上线时间 
+        now.setTime(now.getTime()+250); 
+        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
+        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
+        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
+        document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 "; 
+        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
+    } 
+setInterval("createtime()",250);
+</script>
+
+
+    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  
+  <script color='0,0,255' opacity='0.5' zIndex='-1' count='99' src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+</body>
+</html>
