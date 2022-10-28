@@ -6,7 +6,7 @@
   <link href="http://bigdata-xy.github.io/atom.xml" rel="self"/>
   
   <link href="http://bigdata-xy.github.io/"/>
-  <updated>2022-10-28T08:19:56.943Z</updated>
+  <updated>2022-10-28T13:23:43.295Z</updated>
   <id>http://bigdata-xy.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【博客搭建1】基本框架搭建</title>
+    <link href="http://bigdata-xy.github.io/post/%E5%8D%9A%E5%AE%A2%E5%9F%BA%E6%9C%AC%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA.html"/>
+    <id>http://bigdata-xy.github.io/post/%E5%8D%9A%E5%AE%A2%E5%9F%BA%E6%9C%AC%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA.html</id>
+    <published>2022-10-28T09:58:04.000Z</published>
+    <updated>2022-10-28T13:23:43.295Z</updated>
+    
+    <content type="html"><![CDATA[<p>本博客站点利用hexo+github搭建，在此记录分享我是如何利用hexo+github一步步成功搭建静态博客，避免日后遗忘，且作为博客维护的参考指南，特此记录。同时也希望能帮助到需要的人。</p><h3 id="安装基本软件工具"><a href="#安装基本软件工具" class="headerlink" title="安装基本软件工具"></a>安装基本软件工具</h3><h4 id="Node-js安装及环境配置"><a href="#Node-js安装及环境配置" class="headerlink" title="Node.js安装及环境配置"></a>Node.js安装及环境配置</h4><p>Node.js安装，首先点击如下链接进行安装包的<a href="https://nodejs.org/dist/v12.19.0/node-v12.19.0-x64.msi">安装</a>，下载完成后，按照特别注明中的<a href="https://www.cnblogs.com/liuqiyun/p/8133904.html">Node.js安装及环境配置</a>进行操作，即可完成Node环境配置。</p><h4 id="Git安装及配置"><a href="#Git安装及配置" class="headerlink" title="Git安装及配置"></a>Git安装及配置</h4><p>Node.js安装，首先点击如下链接进行安装包的<a href="https://nodejs.org/dist/v12.19.0/node-v12.19.0-x64.msi">安装</a>，下载完成后，按照<a href="https://www.cnblogs.com/xueweisuoyong/p/11914045.html">安装教程</a>进行操作，即可完成Git安装。</p><h4 id="检验上述工具是否安装成功"><a href="#检验上述工具是否安装成功" class="headerlink" title="检验上述工具是否安装成功"></a>检验上述工具是否安装成功</h4><p>打开Windows+R输入cmd，进入cmd窗口，之后输入<code>node -v</code>，检查node.js是否安装成功，出现如下版本号即安装成功。</p><div align=center><img width=500 hight = 1200 src="https://s2.loli.net/2022/02/05/F3q4g1MKHoYt2UD.png" alt="image-20220202143752125" style="zoom:80%;" /></div><p>之后，分别输入<code>npm -v</code>、<code>git --version</code>，进行检查，出现如下结果即安装完成。</p><div align=center><img width=500 hight = 1400  src="https://s2.loli.net/2022/02/05/67ZBSpVTtJyfi21.png" alt="image-20220202144234010" style="zoom:67%;" /></div><h4 id="Hexo的安装与检验"><a href="#Hexo的安装与检验" class="headerlink" title="Hexo的安装与检验"></a>Hexo的安装与检验</h4><p>安装Hexo，在自己认为合适的地方建了一个blog文件夹。然后通过命令行进入到该文件夹里面，确保路径简单且不要有中文。输入<code>npm install hexo -g</code>，开始安装。</p><p>安装后，输入hexo -v检测是否安装成功,出现下图即为安装成功。</p><div align=center><img width=300 hight = 400  src="https://s2.loli.net/2022/02/02/e5gkXI2VYRmhiwb.png" alt="image-20220202144926287" style="zoom:67%;" /></div><p><strong>在blog文件下</strong>右键打开Git Bash Here，输入如下代码：<code>hexo init #初始化hexo博客</code>，等待安装，若首次不成功，重复输入<code>hexo init</code>再次初始化。出现<code>INFO Start Blogging with Hexo!</code>即为安装成功。</p><p>在cmd中输入<code>npm install</code>，安装所需要的组件。</p><p>之后在Git Bash中输入<code>hexo g &amp;&amp; hexo s</code>，生成本地服务器。进入如下网址<a href="http://localhost:4000/">localhost:4000</a>：</p><div align=center><img src="https://s2.loli.net/2022/02/03/7aEFXugOqM6s9ev.png" alt="image-20220203140153270" style="zoom:50%;" /></div><p>即可查看个人本地博客：</p><div align=center><img src="https://s2.loli.net/2022/02/03/bFS3ZcXI15xmluV.png"  style="zoom: 25%;" /></div><p><font size= 1>注：如果页面一直无法跳转，那么可能端口被占用了。此时我们ctrl+c停止服务器，接着输入hexo server -p 端口号来改变端口号</font></p><h3 id="连接Hexo与Github"><a href="#连接Hexo与Github" class="headerlink" title="连接Hexo与Github"></a>连接Hexo与Github</h3><h4 id="Github建立项目"><a href="#Github建立项目" class="headerlink" title="Github建立项目"></a>Github建立项目</h4><p>首先创建一个GitHub账号，创建完成后，进入账号主页面，点击左上角的new创建一个新的仓库。</p><div align=center><img src="https://s2.loli.net/2022/02/02/5TV6gj1y9OpZqwU.png" alt="image-20220202152215098" style="zoom:50%;" /></div><p>进入编辑仓库页面后，编辑如下：</p><div align=center><img src="https://s2.loli.net/2022/02/02/X8qFxyPJT9WB4od.png" alt="image-20220202153026689" style="zoom: 33%;" /></div><ol><li>编辑仓库名字，统一格式：xxx[^github注册名] .github.io，此处xxx一定要为github注册名</li><li>点击Add a README file</li><li>点击Create a license创建新的仓库</li></ol><p>上述操作之后，该项目已经被部署到网络上，通过<code>xxx.github.io</code>能够进行访问。</p><h4 id="连接Hexo与Github-1"><a href="#连接Hexo与Github-1" class="headerlink" title="连接Hexo与Github"></a>连接Hexo与Github</h4><p>将Hexo与Github page练习起来，设置Git的user name和email。</p><p>首先在blog文件夹里面右键，点击Git Bash Here。分别输入如下代码，这里的用户名和邮箱改为自己的。</p><pre><code>git config -global user.name &quot;Bigdata-xy&quot;git config -global user.name &quot;2456...@qq.com&quot;</code></pre><p>输入<strong>cd ~&#x2F;.ssh</strong>，并输入<strong>ls</strong>进行查看。</p><div align = center><img src="https://raw.githubusercontent.com/Bigdata-xy/cdn/main/img/article_content/image-20221028203825116.png" alt="image-20221028203825116" style="zoom:67%;" /></div><p>之后，再输入如下命令：</p><pre><code>ssh-keygen -t rsa -C &quot;邮件地址&quot;</code></pre><p>这里的邮件地址为申请GitHub的邮件地址。ssh密钥生成。</p><div align=center><img src="https://raw.githubusercontent.com/Bigdata-xy/cdn/main/img/article_content/image-20221028195743624.png" alt="image-20221028195743624" style="zoom:50%;" /></div><p>连续三次回车，生成密钥，最后得到两个文件：<strong>id_rsa</strong>和<strong>id_rsa.pub</strong></p><div align= center><img src="https://raw.githubusercontent.com/Bigdata-xy/cdn/main/img/article_content/image-20221028200324720.png" alt="image-20221028200324720" style="zoom: 50%;" /></div><p>接着输入<code>eval “$(ssh-agent -s)”</code>，回车，添加密钥到ssh-agent </p><p>再输入<code>ssh-add ~/.ssh/id_rsa</code>，回车，添加生成的SSH key到ssh-agent </p><p>接着登录Github，点击头像下的settings，点击new ssh key新建钥匙，名字随意输入，key栏粘贴之前在id_rsa.pub中的代码。</p><div align=center><img src="https://s2.loli.net/2022/02/05/cAKCRgFt2jOJXqV.png" alt="image-20220203133656534" style="zoom:50%;" /></div><p>在.ssh路径下输入<code>cat id_rsa.pub</code>可查看并复制上述key所需的内容。</p><div align=center><img src="https://raw.githubusercontent.com/Bigdata-xy/cdn/main/img/article_content/image-20221028201020894.png" alt="image-20221028201020894" style="zoom: 50%;" /></div><p>输入<code>ssh -T git@github.com</code>，测试添加ssh是否成功，如果看到Hi后面接你的用户名，即为成功。</p><div align=center><img src="https://raw.githubusercontent.com/Bigdata-xy/cdn/main/img/article_content/image-20221028201355298.png" alt="image-20221028201355298" style="zoom:67%;" /></div><h4 id="修改Deployment值"><a href="#修改Deployment值" class="headerlink" title="修改Deployment值"></a>修改Deployment值</h4><p>在blog文件中找到**_config.yml**文件，修改Deployment值（在末尾），将</p><pre><code>deploy:  type:</code></pre><p>更改为：</p><pre><code>deploy:  type: git  repository: git@github.com:xxxx/xxxx.github.io.git  branch: master</code></pre><p>repository值是你在github项目里的https（右下角）</p><div align=center><img src="https://raw.githubusercontent.com/Bigdata-xy/cdn/main/img/article_content/image-20221028204347688.png" alt="image-20221028204347688" style="zoom:67%;" /></div><h3 id="完成建站并新建博客"><a href="#完成建站并新建博客" class="headerlink" title="完成建站并新建博客"></a>完成建站并新建博客</h3><p>新建一篇博客，在blog文件下右键Git Bash Here，输入<code>hexo new &quot;博客名&quot;</code>，你就可以在blog&#x2F;source&#x2F;_posts中找到已创建的文件。或者你直接在上述路径下创建md文件编写一篇新博客。Markdown文件的编写方式留个坑，之后有时间再写。</p><p>在生成以及部署文章之前，需要安装一个扩展，在Git中输入<code>npm install hexo-deployer-git —save</code>，并将刚刚生成的文件编辑好后输入<code>hexo g &amp;&amp; hexo d</code>即可生成部署文章。</p><p>至此，一个具备基础功能的博客就完成了，可以通过<code>用户名.github.io</code>进行访问。</p><h3 id="绑定自己的域名"><a href="#绑定自己的域名" class="headerlink" title="绑定自己的域名"></a>绑定自己的域名</h3><p>这部分可有可无，域名可增加博客的个性化。</p><h4 id="购买域名"><a href="#购买域名" class="headerlink" title="购买域名"></a>购买域名</h4><p>国内的域名服务商有新网，腾讯云，还有阿里云的万网等。下面以阿里云的万网为例： 在万网购买了自己心仪的域名后，进入阿里云的管理控制台-域名与网站-域名就可以看到购买的域名此时的域名状态是未实名认证的，然后就是实名认证（一般需要2小时左右）。</p><h4 id="域名解析"><a href="#域名解析" class="headerlink" title="域名解析"></a>域名解析</h4><p>首先获取自己 github 的二级域名的 IP地址，windows 下直接在 cmd 里 Ping 一下自己的博客就会得到 IP 地址：</p><p><code>ping username.github.io</code>,其中username为自己的github用户名</p><p>下面通过 DNS域名解析将购买的域名指向 github 的二级域名：username.github.io，进入阿里云的管理控制台-域名与网站-云解析 DNS，进入域名的解析设置，点击新手指导，将得到的 IP 地址填到记录值一栏，点击确定就 OK 了。填完以后的解析列表会出现：</p><div align=center><img src="https://raw.githubusercontent.com/Bigdata-xy/cdn/main/img/article_content/image-20221028210944911.png" alt="image-20221028210944911" style="zoom:67%;" /></div><h4 id="设置CNAME"><a href="#设置CNAME" class="headerlink" title="设置CNAME"></a>设置CNAME</h4><p>在本地hexo 项目下，source 文件夹下面创建 CNAME 文件（没有后缀名的），在里面写上购买的域名。比如：</p><div align=center><p><img src="https://raw.githubusercontent.com/Bigdata-xy/cdn/main/img/article_content/image-20221028211124194.png" alt="image-20221028211124194"></p></div><p>在 github 上面，打开 username.github.io 项目的（Settings）设置，然后在 GitHub Pages的 Custom domain设置里填上购买的域名。比如：</p><div align=center><img src="https://raw.githubusercontent.com/Bigdata-xy/cdn/main/img/article_content/image-20221028211212747.png" alt="image-20221028211212747" style="zoom:67%;" /></div><p>这样新域名配置完成，可以使用新的网名访问自己的博客了</p><p>至此，博客的基本框架搭建完成，在博客搭建2、3中会分别介绍【Sakura主题的配置】及【Sakura主题下博客的编写操作】，使得个人博客更具特殊。</p>]]></content>
+    
+    
+    <summary type="html">hexo+github个人博客基本框架构建记录</summary>
+    
+    
+    
+    <category term="技术" scheme="http://bigdata-xy.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="技术" scheme="http://bigdata-xy.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>Hexo-World-生活test</title>
@@ -47,27 +68,6 @@
     <updated>2022-10-27T03:18:27.240Z</updated>
     
     <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-python"><code class="language-python">hexo new <span class="token string">"My New Post"</span>！！！sssssdeccsc</code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-    
-    
-    <summary type="html">blog网站技术模块测试</summary>
-    
-    
-    
-    <category term="技术" scheme="http://bigdata-xy.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-    <category term="web" scheme="http://bigdata-xy.github.io/tags/web/"/>
-    
-    <category term="悦读" scheme="http://bigdata-xy.github.io/tags/%E6%82%A6%E8%AF%BB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo-World-技术test</title>
-    <link href="http://bigdata-xy.github.io/post/695b.html"/>
-    <id>http://bigdata-xy.github.io/post/695b.html</id>
-    <published>2022-10-25T16:19:01.000Z</published>
-    <updated>2022-10-28T08:19:40.212Z</updated>
     
     
     <summary type="html">blog网站技术模块测试</summary>
