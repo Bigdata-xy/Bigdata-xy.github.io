@@ -6,15 +6,36 @@
   <link href="http://bigdata-xy.github.io/atom.xml" rel="self"/>
   
   <link href="http://bigdata-xy.github.io/"/>
-  <updated>2022-10-28T13:23:43.295Z</updated>
+  <updated>2022-10-29T07:31:20.444Z</updated>
   <id>http://bigdata-xy.github.io/</id>
   
   <author>
-    <name>YaoXiao</name>
+    <name>bigdataxy</name>
     
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【博客搭建2】Sakura主题的配置</title>
+    <link href="http://bigdata-xy.github.io/post/Sakura%E4%B8%BB%E9%A2%98%E7%9A%84%E9%85%8D%E7%BD%AE.html"/>
+    <id>http://bigdata-xy.github.io/post/Sakura%E4%B8%BB%E9%A2%98%E7%9A%84%E9%85%8D%E7%BD%AE.html</id>
+    <published>2022-10-29T06:15:55.000Z</published>
+    <updated>2022-10-29T07:31:20.444Z</updated>
+    
+    <content type="html"><![CDATA[<p>Hexo有许多的个性化主题可供选择，可通过Hexo官网<a href="https://hexo.io/themes/index.html">Themes | Hexo</a>进行查看，我的个人博客是使用的Sakura主题，github地址为<a href="https://github.com/honjun/hexo-theme-sakura">honjun&#x2F;hexo-theme-sakura (github.com)</a>，下面按照我的修改内容进行记录。</p><h3 id="主题下载安装"><a href="#主题下载安装" class="headerlink" title="主题下载安装"></a>主题下载安装</h3><h4 id="github下载安装包"><a href="#github下载安装包" class="headerlink" title="github下载安装包"></a>github下载安装包</h4><p>进入上述github地址，点击**Download ZIP **下载压缩包，压缩包里面就已经配置好了很多source内容，为后面省去很多麻烦。 </p><img src="https://raw.githubusercontent.com/Bigdata-xy/cdn/main/img/article_content/image-20221029144837187.png" alt="image-20221029144837187" style="zoom: 33%;" /><p>下载好之后解压到博客根目录（此时会有提示有重复文件，点击替换文件）。接着在cmd中运行<code>nmp i</code>安装依赖。</p><h4 id="相关文夹介绍"><a href="#相关文夹介绍" class="headerlink" title="相关文夹介绍"></a>相关文夹介绍</h4><p>该部分主要简单介绍各文件的作用，方便在对应位置进行修改，知道后会对该主题结构更加清晰，同时方便站点维护，也可以跳过该部分，直接按照之后的步骤进行操作即可。</p><div align=center><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9jZG4uanNkZWxpdnIubmV0L2doL3dhbmcxMzc1ODMwMjQyL1BpY0dvLy9pbWcvMjAyMDAzMTMwOTU0MTYucG5n?x-oss-process=image/format,png" alt="img" style="zoom: 50%;" /></div><ul><li>zh-cn.yml文件，可修改归档和清单里面category和tag网页页面的文字描述和图片。</li></ul><img src="https://raw.githubusercontent.com/Bigdata-xy/cdn/main/img/article_content/image-20221029152644121.png" alt="image-20221029152644121" style="zoom:33%;" /><img src="https://raw.githubusercontent.com/Bigdata-xy/cdn/main/img/article_content/image-20221029152934573.png" alt="image-20221029152934573" style="zoom: 33%;" />]]></content>
+    
+    
+    <summary type="html">Sakura主题的个性化配置</summary>
+    
+    
+    
+    <category term="技术" scheme="http://bigdata-xy.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="技术" scheme="http://bigdata-xy.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>【博客搭建1】基本框架搭建</title>

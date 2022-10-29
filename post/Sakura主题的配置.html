@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
-  <title itemprop="name">Tag: 技术 | bigdataxy</title>
+  <title itemprop="name">【博客搭建2】Sakura主题的配置 | bigdataxy</title>
   
     <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/Bigdata-xy/cdn@1.04/img/favicon.ico">
   
@@ -370,97 +370,126 @@
   </div>
 </header>
 
-      
+      <link rel="stylesheet" type="text/css" href="/css/sharejs.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
 <div class="pattern-center-blank"></div>
-<div class="pattern-center ">
-  <div class="pattern-attachment-img">
-    <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/Bigdata-xy/cdn@1.02/img/banner/coding.jpg" class="lazyload" onerror="imgError(this,3)" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
+
+  <div class="pattern-center single-center">
+    <!-- 有配图默认渲染第一张 -->
+    <div class="pattern-attachment-img lazyload" style="background-image: url(https://cdn.jsdelivr.net/gh/Bigdata-xy/cdn@1.03/img/article/3.jpg);" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/Bigdata-xy/cdn@1.03/img/article/3.jpg">
+    </div>
+    <header class="pattern-header single-header">
+      <h1 class="entry-title">
+      【博客搭建2】Sakura主题的配置</h1>
+      <p class="entry-census">
+        <span>
+          <a href="bigdataxy.cc">
+            <img src="https://cdn.jsdelivr.net/gh/Bigdata-xy/cdn@1.03/img/custom/avatar.jpg">
+          </a>
+        </span>
+        <span>
+          <a href="bigdataxy.cc">bigdataxy</a>
+        </span>
+        <span class="bull">
+        ·</span>
+        2022-10-29<span class="bull">
+        ·</span>
+      <span id="busuanzi_value_page_pv"></span>次阅读</p>
+    </header>
   </div>
-  <header class="pattern-header ">
-    <h1 class="cat-title">技术</h1>
-  </header>
-</div>
+
 <div id="content" class="site-content">
   <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
+      <article id="post-1" class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+        <div class="toc"></div>
+        <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
+        
+        <div class="entry-content">
+          <p>Hexo有许多的个性化主题可供选择，可通过Hexo官网<a target="_blank" rel="noopener" href="https://hexo.io/themes/index.html">Themes | Hexo</a>进行查看，我的个人博客是使用的Sakura主题，github地址为<a target="_blank" rel="noopener" href="https://github.com/honjun/hexo-theme-sakura">honjun&#x2F;hexo-theme-sakura (github.com)</a>，下面按照我的修改内容进行记录。</p>
+<h3 id="主题下载安装"><a href="#主题下载安装" class="headerlink" title="主题下载安装"></a>主题下载安装</h3><h4 id="github下载安装包"><a href="#github下载安装包" class="headerlink" title="github下载安装包"></a>github下载安装包</h4><p>进入上述github地址，点击**Download ZIP **下载压缩包，压缩包里面就已经配置好了很多source内容，为后面省去很多麻烦。 </p>
+<img src="https://raw.githubusercontent.com/Bigdata-xy/cdn/main/img/article_content/image-20221029144837187.png" alt="image-20221029144837187" style="zoom: 33%;" />
+
+<p>下载好之后解压到博客根目录（此时会有提示有重复文件，点击替换文件）。接着在cmd中运行<code>nmp i</code>安装依赖。</p>
+<h4 id="相关文夹介绍"><a href="#相关文夹介绍" class="headerlink" title="相关文夹介绍"></a>相关文夹介绍</h4><p>该部分主要简单介绍各文件的作用，方便在对应位置进行修改，知道后会对该主题结构更加清晰，同时方便站点维护，也可以跳过该部分，直接按照之后的步骤进行操作即可。</p>
+<div align=center><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9jZG4uanNkZWxpdnIubmV0L2doL3dhbmcxMzc1ODMwMjQyL1BpY0dvLy9pbWcvMjAyMDAzMTMwOTU0MTYucG5n?x-oss-process=image/format,png" alt="img" style="zoom: 50%;" /></div>
+
+<ul>
+<li>zh-cn.yml文件，可修改归档和清单里面category和tag网页页面的文字描述和图片。</li>
+</ul>
+<img src="https://raw.githubusercontent.com/Bigdata-xy/cdn/main/img/article_content/image-20221029152644121.png" alt="image-20221029152644121" style="zoom:33%;" />
+
+<img src="https://raw.githubusercontent.com/Bigdata-xy/cdn/main/img/article_content/image-20221029152934573.png" alt="image-20221029152934573" style="zoom: 33%;" />
+
+        </div>
+        <!-- .entry-content -->
+        <div class="single-reward">
+          <div class="reward-open">赏
+            <div class="reward-main">
+              <ul class="reward-row">
+                <li class="alipay-code"><img src="https://cdn.jsdelivr.net/gh/Bigdata-xy/cdn@1.01/img/custom/donate/AliPay.jpg"></li>
+                <li class="wechat-code"><img src="https://cdn.jsdelivr.net/gh/Bigdata-xy/cdn@1.01/img/custom/donate/WeChatPay.png"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
+        <footer class="post-footer">
+          <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
+          <div class="post-tags">
+          </div>
+          <div class="post-share">
+            <div class="social-share sharehidden share-component"></div>
+            <i class="iconfont show-share icon-forward"></i>
+          </div>
+        </footer><!-- .entry-footer -->
+      </article>
+      <!-- #post-## -->
+      <div class="toc" style="background: none;"></div>
+      <section class="post-squares nextprev">
+        
+        
+          
+            <div class="post-nepre full next">
+          
+            <a href="/post/%E5%8D%9A%E5%AE%A2%E5%9F%BA%E6%9C%AC%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA.html" rel="next">
+              <div class="background">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/Bigdata-xy/cdn@1.03/img/article/1.jpg" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/Bigdata-xy/cdn@1.03/img/article/1.jpg">
+              </div>
+              <span class="label">
+              Next Post</span>
+              <div class="info">
+                <h3>
+                【博客搭建1】基本框架搭建</h3>
+                <hr>
+              </div>
+            </a>
+          </div>
+        
+      </section>
       
-  <!-- 首页默认取最最新文章集 -->
-  
-    <article class="post post-list" itemscope="" itemtype="https://schema.org/BlogPosting">
-  <div class="post-entry">
-    <div class="feature">
-      <a href="/post/Sakura%E4%B8%BB%E9%A2%98%E7%9A%84%E9%85%8D%E7%BD%AE.html">
-        <div class="overlay">
-          <i class="iconfont icon-text">
-          </i>
-        </div>
-        <img width="150" height="150" src="https://cdn.jsdelivr.net/gh/Bigdata-xy/cdn@1.03/img/article/3.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" >
-      </a>
-    </div>
-    <h1 class="entry-title">
-    <a href="/post/Sakura%E4%B8%BB%E9%A2%98%E7%9A%84%E9%85%8D%E7%BD%AE.html">
-    【博客搭建2】Sakura主题的配置</a>
-    </h1>
-    <div class="p-time">
-      <i class="iconfont icon-time">
-      </i>
-    2022-10-29</div>
-    <p>
-    Sakura主题的个性化配置</p>
-    <footer class="entry-footer">
-      <div class="post-more">
-        <a href="/post/Sakura%E4%B8%BB%E9%A2%98%E7%9A%84%E9%85%8D%E7%BD%AE.html">
-          <i class="iconfont icon-caidan">
-          </i>
-        </a>
-      </div>
-    </footer>
-  </div>
-  <hr>
-</article>
-  
-    <article class="post post-list" itemscope="" itemtype="https://schema.org/BlogPosting">
-  <div class="post-entry">
-    <div class="feature">
-      <a href="/post/%E5%8D%9A%E5%AE%A2%E5%9F%BA%E6%9C%AC%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA.html">
-        <div class="overlay">
-          <i class="iconfont icon-text">
-          </i>
-        </div>
-        <img width="150" height="150" src="https://cdn.jsdelivr.net/gh/Bigdata-xy/cdn@1.03/img/article/1.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" >
-      </a>
-    </div>
-    <h1 class="entry-title">
-    <a href="/post/%E5%8D%9A%E5%AE%A2%E5%9F%BA%E6%9C%AC%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA.html">
-    【博客搭建1】基本框架搭建</a>
-    </h1>
-    <div class="p-time">
-      <i class="iconfont icon-time">
-      </i>
-    2022-10-28</div>
-    <p>
-    hexo+github个人博客基本框架构建记录</p>
-    <footer class="entry-footer">
-      <div class="post-more">
-        <a href="/post/%E5%8D%9A%E5%AE%A2%E5%9F%BA%E6%9C%AC%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA.html">
-          <i class="iconfont icon-caidan">
-          </i>
-        </a>
-      </div>
-    </footer>
-  </div>
-  <hr>
-</article>
-  
 
 
-      <div class="clearer">
-      </div>
-    </main>
-    <!--  -->
-    
-  </div>
+
+      <section class="author-profile">
+        <div class="info" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+          <a href="bigdataxy.cc" class="profile gravatar"><img src="https://cdn.jsdelivr.net/gh/Bigdata-xy/cdn@1.03/img/custom/avatar.jpg" itemprop="image" alt="bigdataxy" height="70" width="70"></a>
+          <div class="meta">
+            <span class="title">Author</span>
+            <h3 itemprop="name">
+            <a href="bigdataxy.cc" itemprop="url" rel="author">bigdataxy</a>
+            </h3>
+          </div>
+        </div>
+        <hr>
+        <p><i class="iconfont icon-write"></i>马上六级抓紧背单词呀</p>
+      </section>
+    </main><!-- #main -->
+  </div><!-- #primary -->
 </div>
+
+
+
     </div>    
     <div class="ins-search">
     <div class="ins-search-mask"></div>
