@@ -6,7 +6,7 @@
   <link href="http://bigdata-xy.github.io/atom.xml" rel="self"/>
   
   <link href="http://bigdata-xy.github.io/"/>
-  <updated>2022-10-29T11:02:55.778Z</updated>
+  <updated>2022-10-30T08:14:03.345Z</updated>
   <id>http://bigdata-xy.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【博客搭建3】利用Typora软件编写个人博客</title>
+    <link href="http://bigdata-xy.github.io/post/Sakura%E4%B8%BB%E9%A2%98%E7%9A%84%E9%85%8D%E7%BD%AE.html"/>
+    <id>http://bigdata-xy.github.io/post/Sakura%E4%B8%BB%E9%A2%98%E7%9A%84%E9%85%8D%E7%BD%AE.html</id>
+    <published>2022-10-30T08:00:55.000Z</published>
+    <updated>2022-10-30T08:14:03.345Z</updated>
+    
+    <content type="html"><![CDATA[<p>在前期博客搭建及背景设置完成后，可在站点目录下右键Hexo Bash Here，通过<code>hexo new &quot;title&quot;</code>命令，在\Blog\source\ _posts目录下生成以title命名的.md文档，这里强烈推荐Typora编写Markdown，干净简洁的界面看着很舒服。</p><h3 id="软件下载与配置"><a href="#软件下载与配置" class="headerlink" title="软件下载与配置"></a>软件下载与配置</h3><h4 id="Typora编译器的安装"><a href="#Typora编译器的安装" class="headerlink" title="Typora编译器的安装"></a>Typora编译器的安装</h4><p>Typora下载官网：<a href="https://www.typora.net/">Typora</a>，根据自己的电脑配置自行安装下载。</p>]]></content>
+    
+    
+    <summary type="html">记录如何完成一篇博客的步骤</summary>
+    
+    
+    
+    <category term="技术" scheme="http://bigdata-xy.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="技术" scheme="http://bigdata-xy.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>【博客搭建2】Sakura主题的配置</title>
