@@ -408,7 +408,7 @@
         <div class="entry-content">
           <p>Hexo有许多的个性化主题可供选择，可通过Hexo官网<a target="_blank" rel="noopener" href="https://hexo.io/themes/index.html">Themes | Hexo</a>进行查看，我的个人博客是使用的Sakura主题，github地址为<a target="_blank" rel="noopener" href="https://github.com/honjun/hexo-theme-sakura">honjun&#x2F;hexo-theme-sakura (github.com)</a>，下面按照我的修改内容进行记录。</p>
 <h3 id="主题下载安装"><a href="#主题下载安装" class="headerlink" title="主题下载安装"></a>主题下载安装</h3><h4 id="github下载安装包"><a href="#github下载安装包" class="headerlink" title="github下载安装包"></a>github下载安装包</h4><p>进入上述github地址，点击 **Download ZIP ** 下载压缩包，压缩包里面就已经配置好了很多source内容，为后面省去很多麻烦。 </p>
-<div align=center><img src="https://raw.githubusercontent.com/Bigdata-xy/cdn/main/img/article_content/image-20221029144837187.png" alt="image-20221029144837187" style="zoom: 33%;" /></div>
+<div align=center><img src="https://img-blog.csdnimg.cn/9aa1533bd5db451389a5e9e0c69c226f.png" alt="image-20221029144837187" style="zoom: 33%;" /></div>
 
 <p>下载好之后解压到博客根目录（此时会有提示有重复文件，点击替换文件）。接着在cmd中运行<code>nmp i</code>安装依赖。</p>
 <h4 id="相关文件介绍"><a href="#相关文件介绍" class="headerlink" title="相关文件介绍"></a>相关文件介绍</h4><p>该部分主要简单介绍各文件的作用，方便在对应位置进行修改，知道后会对该主题结构更加清晰，同时方便站点维护，也可以跳过该部分，直接按照之后的步骤进行操作即可。</p>
@@ -436,17 +436,15 @@
 </ul>
 <h3 id="CDN搭建"><a href="#CDN搭建" class="headerlink" title="CDN搭建"></a>CDN搭建</h3><p>国内加载github的资源比较慢，需要使用CDN加速来优化网站打开速度，于是使用jsDeliver+github搭建免费的cdn。jsDelivr 是一个免费开源的 CDN 解决方案，用于帮助开发者和站长。包含 JavaScript 库、jQuery 插件、CSS 框架、字体等等 Web 上常用的静态资源。</p>
 <p>这里可以理解为，在github创建一个素材库，可以存放图片，视频，音乐等资源，对存放的资源可以直接通过链接进行访问，这里借助jsDeliver加速素材的访问。之后站点各模块的头像、背景以及文章内容图片均会运用该方式进行访问及存储。</p>
-<h4 id="第一步：创建github仓库"><a href="#第一步：创建github仓库" class="headerlink" title="第一步：创建github仓库"></a>第一步：创建github仓库</h4><div align=center>
-
-<img src="https://raw.githubusercontent.com/Bigdata-xy/cdn/main/img/article_content/image-20221029170216177.png" alt="image-20221029170216177" style="zoom:50%;" />
+<h4 id="第一步：创建github仓库"><a href="#第一步：创建github仓库" class="headerlink" title="第一步：创建github仓库"></a>第一步：创建github仓库</h4><div align=center><img src="https://img-blog.csdnimg.cn/fb1ecfb4e2864aeb80bbf65315f5d84d.png" alt="image-20221029170216177" style="zoom:50%;" />
 
 </div>
 
 <h4 id="第二步：克隆Github仓库到本地"><a href="#第二步：克隆Github仓库到本地" class="headerlink" title="第二步：克隆Github仓库到本地"></a>第二步：克隆Github仓库到本地</h4><p>在任意目录创建一个空文件，右键进入Git Bash Here，输入<code>git clone + 仓库连接</code></p>
-<div align=center><img src="https://raw.githubusercontent.com/Bigdata-xy/cdn/main/img/article_content/image-20221029165834269.png" alt="image-20221029165834269" style="zoom: 50%;" /></div>
+<div align=center><img src="https://img-blog.csdnimg.cn/0ba0def6cf21454ca00580db08dedfb8.png" alt="image-20221029165834269" style="zoom: 50%;" /></div>
 
 <p>之后对仓库会克隆到本地，对cdn进行相关操作，这里的操作为你想建立的一些列路径和加进去的图片。</p>
-<div align=center><img src="https://raw.githubusercontent.com/Bigdata-xy/cdn/main/img/article_content/image-20221029170112287.png" alt="image-20221029170112287" style="zoom: 80%;" /></div>
+<div align=center><img src="https://img-blog.csdnimg.cn/acaec818c6ba4ba281a12849df455435.png" alt="image-20221029170112287" style="zoom: 80%;" /></div>
 
 <p>我这里是这样的。</p>
 <h4 id="第三步：上传需要的资源"><a href="#第三步：上传需要的资源" class="headerlink" title="第三步：上传需要的资源"></a>第三步：上传需要的资源</h4><p>在进入cdn目录，右键Git Bash Here，对操作好的文件进行提交。</p>
@@ -462,10 +460,10 @@ git commit -m &#39;提交说明&#39;
 git push origin main
 </code></pre>
 <h4 id="第四步：发布仓库"><a href="#第四步：发布仓库" class="headerlink" title="第四步：发布仓库"></a>第四步：发布仓库</h4><p>点击Draft a new release建立发布版本</p>
-<div align=center><img src="https://raw.githubusercontent.com/Bigdata-xy/cdn/main/img/article_content/image-20221029170846968.png" alt="image-20221029170846968" style="zoom: 33%;" /></div>
+<div align=center><img src="https://img-blog.csdnimg.cn/1e840343552c4135b87aa3eb6a6e9ac5.png" alt="image-20221029170846968" style="zoom: 33%;" /></div>
 
 <p>进行版本号自定义，版本号是为你最新一次的更新内容做个标签，若你之后再次更新，需要再次更新版本号，之前的版本号同样可以使用，只不过没有新更新的内容。</p>
-<div align=center><img src="https://raw.githubusercontent.com/Bigdata-xy/cdn/main/img/article_content/image-20221029171251521.png" alt="image-20221029171251521" style="zoom: 33%;" /></div>
+<div align=center><img src="https://img-blog.csdnimg.cn/6a82ad44788c4e24a5b4ba41c9651270.png" alt="image-20221029171251521" style="zoom: 33%;" /></div>
 
 <p>对于更新内容不多的情况下，可以直接在github进行操作。</p>
 <h4 id="第五步：通过jsDeliver引用资源"><a href="#第五步：通过jsDeliver引用资源" class="headerlink" title="第五步：通过jsDeliver引用资源"></a>第五步：通过jsDeliver引用资源</h4><p>使用方法：</p>
@@ -676,18 +674,18 @@ links:
 </code></pre>
 <div align=center>
 
-<p><img src="https://raw.githubusercontent.com/Bigdata-xy/cdn/main/img/article_content/image-20221029182922463.png" alt="image-20221029182922463"></p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/18329d228b9b96cf4416fd0bf6b37c21.png" alt="image-20221029182922463"></p>
 </div>
 
 <div align=center>
 
-<p><img src="https://raw.githubusercontent.com/Bigdata-xy/cdn/main/img/article_content/image-20221029182956726.png" alt="image-20221029182956726"></p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/58d4851981d476003d1b0ea2f368f2d1.png" alt="image-20221029182956726"></p>
 </div>
 
 <h5 id="底部内容修改"><a href="#底部内容修改" class="headerlink" title="底部内容修改"></a><font size=3>底部内容修改</font></h5><p>在&#x2F;themes&#x2F;Sakura&#x2F;layout_partial中可修改底部显示内容。</p>
 <div align=center>
 
-<p><img src="https://raw.githubusercontent.com/Bigdata-xy/cdn/main/img/article_content/image-20221029183458771.png" alt="image-20221029183458771"></p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/db706c5117caeede7294b36f7a181f11.png" alt="image-20221029183458771"></p>
 </div>
 
 <h5 id="关于“我？”对话修改"><a href="#关于“我？”对话修改" class="headerlink" title="关于“我？”对话修改"></a><font size=3>关于“我？”对话修改</font></h5><p>在&#x2F;themes&#x2F;Sakura&#x2F;source&#x2F;js中的botui.js进行修改即可。</p>
